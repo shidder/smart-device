@@ -11,25 +11,110 @@
     z-index: 2;
     width: 100%;
     min-height: 881px;
-    background-image: url(../img/header_bg_desktop@1x.png);
+    background-image: url("../img/header_bg_desktop@1x.png");
     background-position: top center;
     background-size: cover;
   }
 }
 
 .header__wrapper {
+  max-width: 1411px;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+
+  @media (max-width: $tablet_breakpoint) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.header__logo {
+  display: flex;
+}
+
+.header__logo-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 16px;
+
+  @media (max-width: $mobile_breakpoint) {
+    display: none;
+  }
+}
+
+.header__logo-text p {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 25px;
+  line-height: 29px;
+  font-weight: 700;
+  color: $basic_light;
+}
+
+.header__logo-text p:nth-of-type(2) {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #788891;
 }
 
 .header__contacts {
   display: flex;
   justify-content: space-around;
+  position: relative;
+  width: 40%;
+  z-index: 4;
+
+  @media (max-width: $tablet_breakpoint) {
+    justify-content: flex-end;
+  }
+}
+
+.header__contacts-link {
+  @media (max-width: $tablet_breakpoint) {
+    font-size: 0;
+  }
 }
 
 .header__logo {
   position: relative;
   z-index: 4;
   margin-right: auto;
+}
+
+.header__contacts-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header__contacts-link {
+  line-height: 18px;
+  color: $basic_light;
+  padding-left: 18px;
+}
+
+.header__contacts-btn {
+  position: relative;
+  z-index: 4;
+  width: 180px;
+  padding: 14px 0;
+  border: 1px solid $basic_light;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  font-family: "Roboto Condensed";
+  text-transform: uppercase;
+  color: $basic_light;
+  background-color: transparent;
+  cursor: pointer;
+
+  @media (max-width: $tablet_breakpoint) {
+    display: none;
+  }
 }
