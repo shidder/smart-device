@@ -6,6 +6,7 @@
   padding-top: 159px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 37px;
   background-image:url("../img/board-desktop@1x.png"), url("../img/geometry-desktop@1x.png");
   background-repeat: no-repeat, no-repeat;
   background-position: 95% 75%, 90% 25%;
@@ -64,6 +65,7 @@
   padding-bottom: 20px;
   background-color: $basic_blue;
   border: none;
+  color: $basic_light;
 
   &--mobile {
     display: none;
