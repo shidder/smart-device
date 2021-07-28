@@ -6,10 +6,10 @@
   padding-top: 159px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 37px;
-  background-image:url("../img/board-desktop@1x.png"), url("../img/geometry-desktop@1x.png");
-  background-repeat: no-repeat, no-repeat;
-  background-position: 95% 75%, 90% 25%;
+  background-image:url("../img/board-desktop@1x.png"), url("../img/geometry-desktop@1x.png"), url("../img/header_bg_desktop@1x.png");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 95% 75%, 90% 25%, top center;
+  background-size: auto, 670px 641px, cover;
 }
 
 .promo__info {
@@ -124,10 +124,11 @@
 @media (max-width: $tablet_breakpoint) {
 .promo {
   box-sizing: border-box;
-  padding-top: 117px;
-  background-image:url("../img/board_tablet@1x.png"), url("../img/geometry-tablet@1x.png");
-  background-repeat: no-repeat, no-repeat;
-  background-position: 100% 41px,100% -68px;
+  padding-top: 207px;
+  background-image:url("../img/board_tablet@1x.png"), url("../img/geometry-tablet@1x.png"), url("../img/header_bg_tablet@1x.png");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 100% 124px,100% 3px,top center;
+  background-size: auto, 330px 446px, cover;
   }
 
   .promo__info {
@@ -165,10 +166,11 @@
     box-sizing: border-box;
     padding-left: 10px;
     padding-right: 10px;
-    padding-top: 238px;
-    background-image: url("../img/board_mobile@1x.png"),url("../img/geometry-mobile@1x.png");
-    background-repeat: no-repeat,no-repeat;
-    background-position: 100% 42px,100% -51px;
+    padding-top: 300px;
+    background-image: url("../img/board_mobile@1x.png"),url("../img/geometry-mobile@1x.png"), url("../img/header_bg_mobile@1x.png");
+    background-repeat: no-repeat,no-repeat, no-repeat;
+    background-position: 100% 104px,100% 10px,top center;
+    background-size: auto, 169px 437px, cover;
     }
 
     .promo__info {
