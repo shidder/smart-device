@@ -1,6 +1,9 @@
-.about__wrapper {
+.about {
+  max-width: 1170px;
   margin: 0 auto;
-  width: 76%;
+}
+
+.about__wrapper {
   box-sizing: border-box;
   display: flex;
   padding-bottom: 100px;

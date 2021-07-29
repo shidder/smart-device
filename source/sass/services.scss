@@ -1,0 +1,154 @@
+.services {
+  background-color: $basic-dark;
+  width: 100%;
+}
+
+.services__wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-top: 93px;
+  padding-bottom: 127px;
+}
+
+.services__wrapper h3 {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 51px;
+  color: $basic_light;
+  font-weight: 400;
+
+  padding-bottom: 47px;
+  margin: 0;
+}
+
+.services__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.services__item {
+  min-height: 620px;
+  width:33.3%;
+  min-width: 255px;
+  position: relative;
+
+  &::after {
+    content: "" ;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 63px;
+    height: 63px;
+    background-color: $basic-blue;
+    background-image: url("../img/icon-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &--produce {
+    background: url("../img/produce_desktop@1x.png") no-repeat;
+    background-size: cover;
+    margin-right: 30px;
+  }
+
+  &--install {
+    background: url("../img/install_desktop@1x.png") no-repeat;
+    background-size: cover;
+    margin-right: 30px;
+  }
+
+  &--components {
+    background: url("../img/components_desktop@1x.png") no-repeat;
+    background-size: cover;
+  }
+}
+
+.services__link {
+  display: block;
+  max-width: 175px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  color: $basic_light;
+  padding-left: 44px;
+  padding-top: 53px;
+}
+
+
+/*
+--------- МЕДИАВЫРАЖЕНИЯ ---------
+*/
+
+@media (max-width: $tablet_breakpoint) {
+  .services__wrapper {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 53px;
+    padding-bottom: 78px;
+  }
+  .services__list {
+    flex-wrap: wrap;
+  }
+  .services__item  {
+    width: 100%;
+    min-height: 256px;
+
+    &--produce {
+      background: url("../img/produce_tablet@1x.png") no-repeat;
+      background-size: cover;
+      margin-right: 0;
+      margin-bottom: 46px;
+    }
+
+    &--install {
+      background: url("../img/install_tablet@1x.png") no-repeat;
+      background-size: cover;
+      margin-right: 0;
+      margin-bottom: 46px
+    }
+
+    &--components {
+      background: url("../img/components_tablet@1x.png") no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+@media (max-width: $mobile_breakpoint) {
+  .services__wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .services__item  {
+    width: 100%;
+    min-height: 256px;
+
+    &--produce {
+      background: url("../img/produce_mobile@1x.png") no-repeat;
+      background-size: cover;
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+
+    &--install {
+      background: url("../img/install_mobile@1x.png") no-repeat;
+      background-size: cover;
+      margin-right: 0;
+      margin-bottom: 30px
+    }
+
+    &--components {
+      background: url("../img/components_mobile@1x.png") no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .services__link {
+    padding-left: 35px;
+    padding-top: 23px;
+  }
+}
