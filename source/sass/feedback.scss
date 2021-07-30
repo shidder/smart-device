@@ -1,0 +1,67 @@
+.feedback {
+  width: 100%;
+  background-color: $basic-blue;
+  padding-bottom: 113px;
+  padding-top: 90px;
+}
+
+.feedback__wrapper {
+  display: flex;
+
+  @media (max-width: $tablet_breakpoint) {
+    max-width: 590px;
+    margin: auto;
+  }
+
+  @media (max-width: $mobile_breakpoint) {
+    max-width: 290px;
+    margin: auto;
+  }
+}
+
+.feedback__info h3 {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 51px;
+  color: $basic_light;
+  font-weight: 400;
+  margin: 0;
+  padding-bottom: 7px;
+}
+
+.feedback__info p {
+  font-size: 16px;
+  line-height: 22px;
+  color: $basic_light;
+  margin: 0;
+  padding-bottom: 40px;
+}
+
+.feedback__img {
+  display: flex;
+  position: relative;
+  width: 50%;
+  background-image: url("../img/geometry-desktop@1x.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 25% 162%;
+  background-size: 670px 641px;
+
+  @media (max-width: $tablet_breakpoint) {
+    display: none;
+  }
+}
+
+.feedback__img img {
+  position: absolute;
+  left: 28%;
+  top: 16%;
+}
+
+.feedback__info {
+  width: 50%;
+
+  @media (max-width: $tablet_breakpoint) {
+    width: 100%;
+  }
+}

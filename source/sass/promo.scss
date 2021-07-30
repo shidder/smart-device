@@ -4,28 +4,29 @@
   align-items: center;
   width: 100%;
   background-color: $basic_dark;
-  padding-top: 159px;
-  padding-left: 20px;
+  padding-top: 307px;
   padding-right: 20px;
   background-image:url("../img/board-desktop@1x.png"), url("../img/geometry-desktop@1x.png"), url("../img/header_bg_desktop@1x.png");
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: 95% 75%, 90% 25%, top center;
+  background-position: 97% 70%, 92% 48%, top center;
   background-size: auto, 670px 641px, cover;
+  padding-bottom: 242px;
 }
 
 .promo__info {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
   z-index: 6;
   max-width: 1494px;
   width: 50%;
-  padding-bottom: 108px;
+  padding-bottom: 95px;
 }
 
 .promo__info h2 {
   margin: 0;
-  padding-bottom: 31px;
+  padding-bottom: 29px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 80px;
   line-height: 94px;
@@ -49,24 +50,26 @@
     content: "";
 
     position: absolute;
-    top: 17px;
-    left: 14px;
-
+    top: 15px;
+    left: 20px;
     display: block;
-
     width: 66px;
     height: 2px;
-
     background-color: $basic_light;
   }
 }
 
 .promo__btn {
+  position: absolute;
+  top: 73%;
+  left: 15%;
   width: 407px;
-  padding-top: 19px;
+  padding-top: 16px;
   padding-bottom: 20px;
   background-color: $basic_blue;
   border: none;
+  font-size: 16px;
+  line-height: 19px;
   color: $basic_light;
 
   &--mobile {
@@ -79,7 +82,9 @@
 }
 
 .promo__scroll {
-  align-self: flex-start;
+  position: absolute;
+  top: 90%;
+  left: 3%;
   padding-top: 2px;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
