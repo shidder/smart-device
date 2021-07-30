@@ -52,6 +52,12 @@
 */
 
 @media (max-width: $tablet_breakpoint) {
+  .about__info {
+    max-width: 532px;
+  }
+
+
+
   .about__info h3 {
     font-size: 32px;
     line-height: 45px;
@@ -80,7 +86,44 @@
     line-height: 40px;
   }
 
+
+
+
 .about__img {
   display: none;
 }
+}
+
+@media (max-width: $tablet_breakpoint) {
+  .about__desc p:last-of-type {
+    height: 85px;
+    padding-bottom: 0;
+    overflow-y: hidden;
+    position: relative;
+
+    &::before {
+      content: "..";
+      position: absolute;
+      bottom: -2px;
+      right: 0;
+    }
+  }
+}
+
+
+@media (max-width: $mobile_min_width) {
+  .about__desc p:last-of-type {
+    height: 173px;
+    padding-bottom: 0;
+    overflow-y: hidden;
+    position: relative;
+
+    &::before {
+      bottom: 3px;
+      right: 91px;
+      width: 65px;
+      height: 18px;
+      background-color: $basic_light;
+    }
+  }
 }

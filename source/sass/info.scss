@@ -1,3 +1,18 @@
 .info {
   width: 100%;
+  background-image: url("../img/triangle_bg_desktop@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+
+  @media (max-width: $tablet_breakpoint) {
+    background-image: url("../img/triangle_bg_tablet@1x.png");
+    background-size: auto;
+    background-position: 100% 50%;
+  }
+
+  @media (max-width: $mobile_breakpoint) {
+    background-position: 50% 75%;
+  }
 }
+
