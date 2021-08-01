@@ -34,6 +34,7 @@
   width:33.3%;
   min-width: 255px;
   position: relative;
+  cursor: pointer;
 
   &::after {
     content: "" ;
@@ -52,6 +53,7 @@
     background: url("../img/produce_desktop@1x.png") no-repeat;
     background-size: cover;
     margin-right: 30px;
+
   }
 
   &--install {
@@ -75,6 +77,7 @@
   color: $basic_light;
   padding-left: 44px;
   padding-top: 53px;
+  text-decoration: none;
 }
 
 
@@ -96,18 +99,20 @@
     width: 100%;
     min-height: 256px;
 
+    &--produce,
+    &--install {
+      margin-right: 0;
+      margin-bottom: 46px;
+    }
+
     &--produce {
       background: url("../img/produce_tablet@1x.png") no-repeat;
       background-size: cover;
-      margin-right: 0;
-      margin-bottom: 46px;
     }
 
     &--install {
       background: url("../img/install_tablet@1x.png") no-repeat;
       background-size: cover;
-      margin-right: 0;
-      margin-bottom: 46px
     }
 
     &--components {
@@ -127,18 +132,20 @@
     width: 100%;
     min-height: 256px;
 
+    &--produce,
+    &--install {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+
     &--produce {
       background: url("../img/produce_mobile@1x.png") no-repeat;
       background-size: cover;
-      margin-right: 0;
-      margin-bottom: 30px;
     }
 
     &--install {
       background: url("../img/install_mobile@1x.png") no-repeat;
       background-size: cover;
-      margin-right: 0;
-      margin-bottom: 30px
     }
 
     &--components {

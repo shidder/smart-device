@@ -1,0 +1,30 @@
+.modal {
+  width: 100%;
+
+}
+
+.modal__info {
+  max-width: 490px;
+  background-color: $basic_blue;
+  margin: 0 auto;
+  padding-left: 40px;
+  box-sizing: border-box;
+}
+
+.modal__info h3 {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 51px;
+  color: $basic_light;
+  font-weight: 400;
+  margin: 0;
+  padding-bottom: 7px;
+}
+
+.modal__info p {
+  font-size: 16px;
+  line-height: 22px;
+  color: $basic_light;
+  margin: 0;
+  padding-bottom: 40px;
+}
